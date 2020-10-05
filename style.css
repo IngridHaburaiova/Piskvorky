@@ -1,6 +1,5 @@
 .piskvorky{
   background-image:linear-gradient(#615dad,#ffc8da );
-  width: 700px;
   position: absolute;
   right: 80px;
   left: 80px;
@@ -9,8 +8,9 @@
 }
 
 img {
-  display: block;
-  width: 500px;
+  display: flex;
+  justify-content: center;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -20,15 +20,17 @@ img {
 .text{
   color: white;
   background-color: #283e50;
-  width: 500px;
+  width: 700px;
   display: inline-block;
   font-size: 20px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
   position: relative;
    }
+
 
 h1{
   font-size: 50px;
@@ -37,7 +39,7 @@ h1{
   margin: 10px;
 }
 
-  .textPiskvorky{
+.textPiskvorky{
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
@@ -50,7 +52,8 @@ h1{
   font-size: 30px;
 }
 
-.pravidla{
+.pravidla,
+.uvodniStranka{
   background-color: #1fcca4;
   padding: 20px;
   text-align: center;
@@ -67,7 +70,10 @@ a{
   text-decoration: none;
 
 }
-.pravidla:focus, .pravidla:hover {
+.pravidla:focus, 
+.pravidla:hover,
+.uvodniStranka:focus,
+.uvodniStranka:hover {
   background-color: #1cbb96;
   color: white;
 }
@@ -76,3 +82,89 @@ a{
   background-color: #0090e9;
   color: white;
 }
+
+.strankaPravidla{
+  background-image:linear-gradient(#615dad,#ffc8da );
+  display: flex;
+  align-items: center;
+}
+.textpravidla{
+  margin-top: 30px;
+  justify-content: center;
+  width: 700px;
+  color: white;
+  background-color: #283e50;
+  width: 700px;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative
+}
+
+ol {
+text-align: justify;
+width: auto;
+padding-right: 40px;
+}
+
+li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ikonka {
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+  filter: invert(100%);
+  float: none;
+  display: inline-block;
+ }
+
+figure{
+  display: inline-block;
+  flex-direction: row;
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  font-size: 15px;
+  font-style: italic;
+ }
+
+figcaption,
+.fotka {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  margin:0;
+}
+
+.priklady{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+    }
+
+     @media only screen and (max-width: 380px) {
+      .priklady {
+      display: block;
+      width: 100%;
+      margin: 0;
+     }
+     figure{
+      display: inline-block;
+      width: auto;
+      height: auto;
+           }
+           .textpravidla {
+             min-width: 200px;
+           }
+           .strankaPravidla {
+             min-width: 300px;
+           }
+    }
+    
