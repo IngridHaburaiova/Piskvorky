@@ -1,10 +1,17 @@
-.piskvorky{
+body{
   background-image:linear-gradient(#615dad,#ffc8da );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.piskvorky{
   position: absolute;
-  right: 80px;
   left: 80px;
+  right: 80px;
   display: flex;
   flex-direction: column;
+  
 }
 
 img {
@@ -37,6 +44,8 @@ h1{
   padding: 20px;
   font-family: Lobster;
   margin: 10px;
+  color: white;
+  text-align: center;
 }
 
 .textPiskvorky{
@@ -78,7 +87,8 @@ a{
   color: white;
 }
 
-.zacitHrat:focus, .zacitHrat:hover {
+.zacitHrat:focus, 
+.zacitHrat:hover {
   background-color: #0090e9;
   color: white;
 }
@@ -167,4 +177,81 @@ figcaption,
              min-width: 300px;
            }
     }
+  /*  
+.hra{
+   display: block;
+   max-width: 80vmin;
+}*/
+
+.piskvorky{
+  max-width: 120vmin; 
+}
+
+    .firstline{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      padding-left: 60px;
+      padding-right: 60px;
+       }
+
+  
+       .hraje{
+      width: auto;
+      border-radius: 10%;
+      margin: 0px;
+         }
     
+    .home{
+      background-color: rgb(65, 185, 159);
+      padding: 20px;
+      width: auto;
+      border-radius: 10%;
+           }
+
+    .restart{
+      background-color: rgb(36, 108, 156);
+      padding: 20px;
+      margin-left: 10px;
+      width: auto;
+      border-radius: 10%;
+            }
+
+       .home:focus,
+       .home:hover {
+         background-color: #119173;
+              }
+
+              .restart:focus,
+              .restart:hover {
+                background-color: rgb(20, 92, 139);
+                     }
+                     
+.homerestart{
+  display: flex;
+  max-width: 80vmin;
+  margin-right: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+  .grid {
+    display: grid;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    height: 80vmin;
+    width: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;  
+      }
+
+    button:hover {
+        background-color: white;
+             }
+
+             button{
+               border: 1px solid black;
+             }
+  
