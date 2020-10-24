@@ -206,15 +206,24 @@ figcaption,
       font-size: 30px;
                }
 
-               .kolečko {
-                  width: 1em;
-                  height: 1em;
-                  margin: 0;
-                  padding-top: 10px;
-                  filter: invert(100%);
-                  display: inline-block;
+               .kolecko {
+                border-radius: 50%;
+                border: 3px solid white;
+                width: 1.5em;
+                height: 1.5em;
+                margin-left: 5px;
+                margin-top: 30px;
+                margin-bottom: 30px;
                  }
-
+                 .kolečko2 {
+                  border-radius: 50%;
+                  border: 3px solid rgb(15, 15, 15);
+                  width: 1.5em;
+                  height: 1.5em;
+                  margin-left: 10px;
+                  padding: 0;
+                  }
+  
                  .hrajekolecko{
                    display: flex;
                  }
@@ -276,3 +285,29 @@ figcaption,
               padding: 0;
              }
   
+             .ikonka1{
+               height: 2em;
+               width: 2em;
+               margin: 0;
+               padding: 0;
+               display: inline;
+               animation-name: zvetseni;
+               animation-duration: 1s;
+                               }
+                               @keyframes zvetseni {
+                                from {transform: scale (1,1);}
+                                to {transform: scale(1.5,1.5);}
+                              }
+
+             .volnePole{
+              height: 1.5em;
+              width: 1.5em;
+              margin-top:17px;
+             }
+
+             .volnePole2{
+              filter: invert(100%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+              height: 1.5em;
+              width: 1.5em;
+              margin-top:17px;
+            }
